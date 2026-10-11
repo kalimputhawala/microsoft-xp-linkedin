@@ -1,0 +1,834 @@
+/* LinkedIn XP Theme — local styles, no remote assets. */
+html.l-x-theme-active {
+    --l-x-blue: #0755da;
+    --l-x-blue-dark: #063991;
+    --l-x-cream: #ece9d8;
+    --l-x-border: #7f9db9;
+    --l-x-purple: #5c287c;
+    --l-x-taskbar-height: 44px;
+    scroll-padding-bottom: 60px;
+}
+
+html.l-x-theme-active:not(.l-x-messenger-frame) body {
+    background: #ece9d8 !important;
+    padding-bottom: 60px !important;
+}
+
+html.l-x-theme-active body,
+html.l-x-theme-active button,
+html.l-x-theme-active input,
+html.l-x-theme-active textarea,
+html.l-x-theme-active select {
+    font-family: Tahoma, Verdana, Arial, sans-serif !important;
+}
+
+html.l-x-theme-active [data-l-x-native-header] {
+    display: none !important;
+}
+
+html.l-x-theme-active [data-l-x-app-grid] {
+    grid-template-rows: 0px minmax(0, 1fr) !important;
+}
+
+html.l-x-theme-active.l-x-native-menu-open [data-l-x-native-header] {
+    display: block !important;
+    position: fixed !important;
+    inset: 0 0 auto !important;
+    width: 100% !important;
+    max-width: none !important;
+    z-index: 2147482999 !important;
+    background: #fff !important;
+    border-bottom: 2px solid #2168db !important;
+    box-shadow: 0 3px 10px #17355a44;
+    pointer-events: auto !important;
+    overflow: visible !important;
+}
+
+html.l-x-theme-active [data-l-x-layout] {
+    width: auto !important;
+    max-width: none !important;
+    margin-top: 0 !important;
+    padding-top: 12px !important;
+}
+
+html.l-x-theme-active [data-l-x-layout="workspace"] {
+    min-width: 0 !important;
+    padding-top: 0 !important;
+}
+
+html.l-x-theme-active [data-l-x-layout="canvas"] {
+    width: auto !important;
+    max-width: none !important;
+    margin: 0 16px !important;
+    padding: 12px 0 24px !important;
+}
+
+html.l-x-theme-active [data-l-x-layout="columns"] {
+    display: grid !important;
+    width: 100% !important;
+    max-width: none !important;
+    grid-template-columns: 220px minmax(0, 1fr) 280px !important;
+    grid-template-rows: auto !important;
+    gap: 18px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    align-items: start !important;
+}
+
+html.l-x-theme-active [data-l-x-layout="columns"] > :is(aside, section) {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    grid-row: 1 !important;
+    margin: 0 !important;
+    align-self: start !important;
+}
+
+html.l-x-theme-active [data-l-x-layout="columns"] > aside[aria-label="Sidebar"] {
+    grid-column: 1 !important;
+}
+
+html.l-x-theme-active [data-l-x-layout="columns"] > section[aria-label="Primary content"] {
+    grid-column: 2 !important;
+}
+
+html.l-x-theme-active [data-l-x-layout="columns"] > aside[aria-label="Aside"] {
+    grid-column: 3 !important;
+}
+
+html.l-x-theme-active .application-outlet {
+    padding-top: 0 !important;
+}
+
+html.l-x-theme-active .authentication-outlet {
+    padding-top: 0 !important;
+}
+
+html.l-x-theme-active .scaffold-layout,
+html.l-x-theme-active .scaffold-layout__inner,
+html.l-x-theme-active .scaffold-layout__row {
+    max-width: none !important;
+}
+
+html.l-x-theme-active .scaffold-layout__row {
+    margin-top: 0 !important;
+}
+
+html.l-x-theme-active .scaffold-layout {
+    margin-top: 0 !important;
+    padding: 12px 18px 24px !important;
+}
+
+html.l-x-theme-active .scaffold-layout__inner {
+    width: 100% !important;
+}
+
+html.l-x-theme-active .scaffold-layout__main {
+    min-width: 0 !important;
+    max-width: none !important;
+}
+
+html.l-x-theme-active .artdeco-card,
+html.l-x-theme-active .feed-shared-update-v2,
+html.l-x-theme-active .share-box-feed-entry__closed-share-box,
+html.l-x-theme-active .scaffold-layout__aside > div,
+html.l-x-theme-active [data-l-x-card] {
+    border: 1px solid #7f9db9 !important;
+    border-radius: 5px !important;
+    background-color: #fff !important;
+    box-shadow: 1px 2px 3px #73746b33 !important;
+}
+
+html.l-x-theme-active .feed-shared-update-v2,
+html.l-x-theme-active .share-box-feed-entry__closed-share-box,
+html.l-x-theme-active [data-l-x-card] {
+    border-top: 4px solid #2168db !important;
+}
+
+html.l-x-theme-active .feed-shared-actor__title,
+html.l-x-theme-active .artdeco-entity-lockup__title,
+html.l-x-theme-active .artdeco-card h1,
+html.l-x-theme-active .artdeco-card h2 {
+    color: #123f88;
+}
+
+html.l-x-theme-active .artdeco-button--primary {
+    border: 1px solid #003c74 !important;
+    border-radius: 3px !important;
+    background: linear-gradient(#79a7f5 0%, #4b8de8 9%, #226dd5 48%, #1250b3 49%, #3d84e1 100%) !important;
+    color: #fff !important;
+    box-shadow: inset 0 0 0 1px #c6ddff66 !important;
+    text-shadow: 0 1px 1px #003a75;
+}
+
+html.l-x-theme-active .artdeco-button--secondary {
+    border: 1px solid #7f9db9 !important;
+    border-radius: 3px !important;
+    background: linear-gradient(#fff, #f8f7ef 50%, #e4e0cf) !important;
+    color: #183b6e !important;
+    box-shadow: inset 0 0 0 1px #fff !important;
+}
+
+html.l-x-theme-active .artdeco-button--primary:hover,
+html.l-x-theme-active .artdeco-button--secondary:hover {
+    border-color: #c58e19 !important;
+    box-shadow: inset 0 0 0 1px #ffdc6a !important;
+}
+
+/* The replacement shell only appears after the native navigation is found. */
+#l-x-shell,
+#l-x-shell * {
+    box-sizing: border-box;
+}
+
+#l-x-shell {
+    position: fixed;
+    inset: auto 0 0;
+    z-index: 2147483000;
+    font: 14px Tahoma, Verdana, Arial, sans-serif;
+    color: #18243a;
+    line-height: normal;
+    isolation: isolate;
+}
+
+#l-x-shell button,
+#l-x-shell a {
+    font: inherit;
+    letter-spacing: normal;
+}
+
+#l-x-shell button {
+    cursor: pointer;
+}
+
+#l-x-shell a {
+    text-decoration: none;
+}
+
+#l-x-shell [hidden] {
+    display: none !important;
+}
+
+#l-x-shell :is(a, button):focus-visible {
+    outline: 2px solid #ffdc65;
+    outline-offset: -4px;
+}
+
+.l-x-taskbar {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 0 0 0;
+    background: linear-gradient(#316ce8 0%, #6d9cf3 4%, #3b7be3 12%, #225bd4 46%, #1648bb 74%, #245edb 100%);
+    border-top: 1px solid #1d58c8;
+    box-shadow: 0 -1px 0 #86b5ff, inset 0 2px 2px #87aef8aa;
+}
+
+.l-x-start-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex: 0 0 112px;
+    align-self: stretch;
+    padding: 0 18px 2px 13px;
+    border: 0;
+    border-radius: 0 17px 17px 0;
+    background: linear-gradient(#73b85b 0%, #5eac46 5%, #4da538 14%, #348c25 48%, #2d7e21 67%, #479c2e 100%);
+    box-shadow: inset 0 2px 3px #c0eaa1, inset -4px 0 6px #18551c99, 2px 0 3px #06297588;
+    color: #fff;
+    text-shadow: 1px 2px 1px #174916;
+    font-size: 20px !important;
+    font-style: italic !important;
+    font-weight: 700 !important;
+}
+
+.l-x-start-button:hover,
+.l-x-start-button[aria-expanded="true"] {
+    filter: brightness(1.1);
+}
+
+.l-x-start-button[aria-expanded="true"] {
+    box-shadow: inset 1px 2px 7px #175a2499, inset -3px 0 4px #18551c99;
+}
+
+.l-x-start-button .l-x-icon {
+    width: 27px;
+    height: 27px;
+    filter: drop-shadow(1px 2px 1px #195519);
+}
+
+.l-x-task-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 160px;
+    max-width: 320px;
+    height: 32px;
+    margin-left: 3px;
+    padding: 0 11px;
+    border: 1px solid #083992;
+    border-radius: 4px;
+    color: #fff;
+    background: linear-gradient(#2c6bc9, #2157b0);
+    box-shadow: inset 1px 1px 1px #b5d5ff40, inset 0 0 4px #00308066;
+    text-shadow: 0 1px #1a3e7b;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.l-x-task-button:hover {
+    background: linear-gradient(#4388ee, #2d6ed4);
+}
+
+.l-x-task-button .l-x-icon {
+    flex: 0 0 21px;
+    width: 21px;
+    height: 21px;
+}
+
+.l-x-task-button span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.l-x-clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    align-self: stretch;
+    min-width: 100px;
+    padding: 0 15px;
+    margin-left: auto;
+    border-left: 1px solid #0b4fae;
+    background: linear-gradient(#1ab6f4, #139de2 20%, #1496d8 80%, #20abe7);
+    box-shadow: inset 1px 0 1px #82daff, inset 0 2px 1px #67ceff;
+    color: #fff;
+    font-size: 12px;
+    text-shadow: 0 1px #126ca1;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+.l-x-start-menu {
+    position: absolute;
+    bottom: 44px;
+    left: 0;
+    width: 410px;
+    max-height: calc(100vh - 44px);
+    overflow: hidden;
+    overflow-y: auto;
+    border: 2px solid #1853c3;
+    border-radius: 8px 8px 0 0;
+    background: #fff;
+    box-shadow: 2px -2px 12px #152c4c55;
+}
+
+.l-x-profile {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    min-height: 78px;
+    padding: 12px 15px;
+    background: linear-gradient(#0d57c2, #4286e8 8%, #1c6cd8 62%, #1461cb);
+    border-bottom: 2px solid #ec9e31;
+    box-shadow: inset 0 1px 1px #8ec8ff;
+    color: #fff !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    text-shadow: 1px 2px 1px #114884;
+}
+
+.l-x-profile:hover {
+    background: linear-gradient(#0d57c2, #559aef 8%, #257bdd 62%, #1461cb);
+}
+
+.l-x-profile :is(img, .l-x-profile-avatar) {
+    width: 51px;
+    height: 51px;
+    flex: 0 0 51px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: #d6e8fa;
+    box-shadow: 1px 2px 3px #104a9888;
+    object-fit: cover;
+}
+
+.l-x-profile-avatar {
+    display: grid;
+    place-items: center;
+    font-size: 27px;
+    color: #1b5898;
+    text-shadow: none;
+}
+
+.l-x-profile span {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.l-x-menu-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    min-height: 230px;
+    padding: 9px 8px 10px;
+    background: linear-gradient(90deg, #fff 0%, #fff 50%, #d3e5fa 50%, #d3e5fa 100%);
+}
+
+.l-x-search {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 0;
+    padding: 10px 12px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #b7c8dc;
+    background: #ece9d8;
+}
+
+.l-x-search input {
+    width: 0;
+    min-width: 0;
+    flex: 1 1 auto;
+    height: 31px;
+    margin: 0;
+    padding: 4px 8px;
+    border: 1px solid #7f9db9;
+    border-radius: 2px;
+    background: #fff;
+    color: #18243a;
+    box-shadow: inset 1px 1px 2px #5b728a33;
+    font: 13px Tahoma, Verdana, Arial, sans-serif;
+}
+
+.l-x-search input:focus {
+    border-color: #2168db;
+    outline: 1px solid #92b5ed;
+    outline-offset: 0;
+}
+
+.l-x-search input::placeholder {
+    color: #6d7681;
+    opacity: 1;
+}
+
+.l-x-search button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-width: 50px;
+    height: 31px;
+    margin: 0;
+    padding: 0 11px;
+    border: 1px solid #003c74;
+    border-radius: 3px;
+    background: linear-gradient(#fff, #f5f4ec 48%, #ece8d9 52%, #e1dcc8);
+    color: #183b6e;
+    box-shadow: inset 0 0 0 1px #fff;
+    font-weight: 400 !important;
+    text-shadow: none;
+}
+
+.l-x-search button:hover {
+    border-color: #8f741e;
+    box-shadow: inset 0 0 0 1px #ffdb63;
+}
+
+.l-x-search button:active {
+    background: #e6e2d5;
+    box-shadow: inset 1px 1px 2px #897f6444;
+}
+
+.l-x-search .l-x-icon {
+    width: 18px;
+    height: 18px;
+}
+
+#l-x-shell .l-x-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    border: 0;
+    white-space: nowrap;
+}
+
+.l-x-menu-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    min-height: 63px;
+    padding: 9px 11px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    color: #143861 !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    text-shadow: none;
+}
+
+.l-x-menu-link:hover,
+.l-x-menu-link[aria-current="page"] {
+    color: #fff !important;
+    background: #316ac5;
+    border-color: #316ac5;
+}
+
+.l-x-menu-link .l-x-icon {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+    filter: drop-shadow(1px 1px 1px #5e7b9455);
+}
+
+.l-x-menu-link span {
+    min-width: 0;
+}
+
+.l-x-menu-link .l-x-badge {
+    position: absolute;
+    top: 8px;
+    left: 34px;
+    min-width: 17px;
+    height: 17px;
+    padding: 1px 4px;
+    border: 1px solid #fff;
+    border-radius: 9px;
+    background: #cf3c30;
+    color: #fff;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+}
+
+.l-x-menu-footer {
+    min-height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 8px 14px;
+    background: linear-gradient(#2c7bdc, #0959c5);
+    border-top: 1px solid #6aa8ef;
+    color: #fff;
+    font-size: 11px;
+    text-shadow: 0 1px #1b4c93;
+}
+
+.l-x-icon,
+.l-x-icon svg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.l-x-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Yahoo Messenger-inspired native conversations; all controls stay native. */
+html.l-x-theme-active .msg-overlay-container {
+    bottom: 44px !important;
+    z-index: 1001 !important;
+}
+
+html.l-x-messenger-frame,
+html.l-x-messenger-frame body {
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+html.l-x-theme-active iframe[data-l-x-messenger-host] {
+    top: 0 !important;
+    bottom: 0 !important;
+    height: 100% !important;
+}
+
+html.l-x-theme-active .application-outlet__overlay-container {
+    bottom: 44px !important;
+}
+
+html.l-x-messenger-frame .msg-overlay-container {
+    bottom: 0 !important;
+}
+
+html.l-x-messenger-frame .msg__list-detail {
+    height: calc(100vh - 60px) !important;
+    max-height: calc(100vh - 60px) !important;
+    min-height: 0 !important;
+}
+
+html.l-x-theme-active :is(.msg-overlay-list-bubble, .msg-overlay-conversation-bubble) {
+    border: 2px solid #4b3285 !important;
+    border-radius: 7px 7px 0 0 !important;
+    background: #f5f1dd !important;
+    box-shadow: 0 3px 12px #221a3844 !important;
+}
+
+html.l-x-theme-active :is(.msg-overlay-bubble-header, .msg-overlay-list-bubble__header, .msg-overlay-conversation-bubble__header),
+html.l-x-theme-active .msg-overlay-list-bubble > header,
+html.l-x-theme-active [data-l-x-msg-header] {
+    min-height: 42px;
+    background: linear-gradient(#b6a1db 0%, #9278c5 7%, #7959ab 48%, #664696 50%, #8160b1 100%) !important;
+    border-bottom: 1px solid #4b3285 !important;
+    border-radius: 4px 4px 0 0 !important;
+    color: #fff !important;
+    box-shadow: inset 0 1px 0 #e9ddff;
+}
+
+html.l-x-theme-active :is(.msg-overlay-bubble-header, .msg-overlay-list-bubble__header, .msg-overlay-conversation-bubble__header) :is(h2, h3, p, span, button, a, svg, li-icon),
+html.l-x-theme-active .msg-overlay-list-bubble > header :is(h2, h3, p, span, button, a, svg, li-icon),
+html.l-x-theme-active [data-l-x-msg-header] :is(h2, h3, p, span, button, a, svg, li-icon) {
+    color: #fff !important;
+}
+
+html.l-x-theme-active .msg-overlay-bubble-header__title,
+html.l-x-theme-active .msg-overlay-list-bubble__title {
+    font-weight: 700;
+    text-shadow: 0 1px 1px #442763;
+}
+
+html.l-x-theme-active [data-l-x-msg-titled] .l-x-yahoo-label {
+    display: none !important;
+}
+
+html.l-x-theme-active [data-l-x-msg-title] {
+    font-size: 0 !important;
+}
+
+html.l-x-theme-active [data-l-x-msg-title]::after {
+    content: "Yahoo! Messenger";
+    color: #fff;
+    font: 700 13px Tahoma, Verdana, Arial, sans-serif;
+    text-shadow: 0 1px 1px #442763;
+}
+
+html.l-x-theme-active .l-x-yahoo-label,
+html.l-x-theme-active .l-x-messenger-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 8px;
+    color: #fff !important;
+    font: 700 12px Tahoma, Verdana, Arial, sans-serif !important;
+    white-space: nowrap;
+}
+
+html.l-x-theme-active .l-x-yahoo-label .l-x-icon,
+html.l-x-theme-active .l-x-messenger-brand .l-x-icon {
+    width: 22px;
+    height: 22px;
+}
+
+html.l-x-theme-active :is(.msg-overlay-list-bubble__content, .msg-overlay-conversation-bubble__content, .msg-overlay-list-bubble-search, .msg-form, .msg-conversations-container, .msg-conversation-card, .msg-search-form) {
+    background: #f5f1dd !important;
+}
+
+html.l-x-theme-active :is(.msg-overlay-list-bubble__default-list, .msg-conversations-container__conversations-list, .msg-conversation-list, .msg-s-message-list-container, .msg-s-message-list, .msg-s-message-list-content) {
+    background: #fffef8 !important;
+}
+
+html.l-x-theme-active :is(.msg-overlay-list-bubble-search, .msg-search-form) {
+    border-bottom: 1px solid #ccc4b1 !important;
+}
+
+html.l-x-theme-active :is(.msg-overlay-list-bubble__search-input, .msg-search-form__search-field, .msg-form__contenteditable) {
+    border: 1px solid #8f7ea6 !important;
+    border-radius: 2px !important;
+    background: #fff !important;
+    color: #222 !important;
+    box-shadow: inset 1px 1px 2px #7a6c8a22 !important;
+}
+
+html.l-x-theme-active :is(.msg-conversation-listitem, .msg-overlay-list-bubble__default-list-item) {
+    border-bottom: 1px solid #e7e0cf !important;
+}
+
+html.l-x-theme-active .msg-conversation-listitem:hover {
+    background: #f4eccb !important;
+}
+
+html.l-x-theme-active :is(.msg-conversation-listitem--selected, .msg-conversation-listitem__link--active) {
+    background: #e9ddf5 !important;
+    box-shadow: inset 4px 0 #77519e !important;
+}
+
+html.l-x-theme-active :is(.msg-conversation-listitem__participant-names, .msg-s-message-group__name, .msg-thread__link-to-profile) {
+    color: #5c287c !important;
+}
+
+html.l-x-theme-active :is(.msg-thread, .msg-s-message-list-container) {
+    border-color: #b4a5c3 !important;
+}
+
+html.l-x-theme-active .msg-thread__topcard {
+    background: linear-gradient(#f5eddd, #e8dfc6) !important;
+    border-bottom: 1px solid #b4a5c3 !important;
+}
+
+html.l-x-theme-active .msg-s-message-group {
+    border-bottom-color: #e5ded0 !important;
+}
+
+html.l-x-theme-active :is(.msg-form__footer, .msg-form__msg-content-container) {
+    background: #f5f1dd !important;
+    border-color: #ccc4b1 !important;
+}
+
+html.l-x-theme-active :is(.msg-form__send-button, .msg-form .artdeco-button--primary) {
+    border: 1px solid #4b3285 !important;
+    border-radius: 3px !important;
+    background: linear-gradient(#ad91ce, #8b64b4 40%, #704799 60%, #9063b7) !important;
+    box-shadow: inset 0 0 0 1px #ddcaf088 !important;
+    color: #fff !important;
+    text-shadow: 0 1px #47225f;
+}
+
+html.l-x-theme-active .msg-form__send-button:disabled {
+    opacity: 0.55;
+}
+
+html.l-x-theme-active :is(.msg-form__left-actions, .msg-form__right-actions) button {
+    color: #5c287c !important;
+}
+
+html.l-x-theme-active :is(.msg-overlay-list-bubble, .msg-overlay-conversation-bubble) :is(img, .presence-entity__image) {
+    border-radius: 4px !important;
+}
+
+html.l-x-theme-active :is(.msg-conversations-container__title-row, .msg-cross-pillar-inbox-top-bar-wrapper__container, .msg-title-bar) {
+    min-height: 48px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #4b3285 !important;
+    background: linear-gradient(#b6a1db 0%, #9278c5 7%, #7959ab 48%, #664696 50%, #8160b1 100%) !important;
+    color: #fff !important;
+    box-shadow: inset 0 1px 0 #e9ddff;
+}
+
+html.l-x-theme-active :is(.msg-conversations-container__title-row, .msg-cross-pillar-inbox-top-bar-wrapper__container, .msg-title-bar) :is(h1, h2, p, span, button, a, svg, li-icon) {
+    color: #fff !important;
+}
+
+html.l-x-theme-active :is(.msg-conversations-container__title-row, .msg-cross-pillar-inbox-top-bar-wrapper__container) h1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 0 !important;
+    text-shadow: 0 1px 1px #442763;
+}
+
+html.l-x-theme-active :is(.msg-conversations-container__title-row, .msg-cross-pillar-inbox-top-bar-wrapper__container) h1::before {
+    content: "Yahoo! Messenger";
+    font: 700 16px Tahoma, Verdana, Arial, sans-serif;
+    color: #fff;
+}
+
+html.l-x-theme-active :is(.msg-conversations-container__title-row, .msg-cross-pillar-inbox-top-bar-wrapper__container) h1::after {
+    content: "☺";
+    display: inline-grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #b78f16;
+    border-radius: 50%;
+    background: linear-gradient(#fff49a, #ffdc45 55%, #f5bb17);
+    color: #49380e;
+    box-shadow: inset 0 1px 0 #fffbd0, 0 1px 2px #45216355;
+    font: 22px/21px Arial, sans-serif;
+    text-shadow: none;
+}
+
+html.l-x-theme-active .msg-conversation-card__title-row .msg-entity-lockup__entity-title {
+    color: #5c287c !important;
+    text-shadow: none;
+}
+
+@media (max-width: 1050px) {
+    html.l-x-theme-active [data-l-x-layout="columns"] {
+        grid-template-columns: 200px minmax(0, 1fr) !important;
+        gap: 14px !important;
+    }
+
+    html.l-x-theme-active [data-l-x-layout="columns"] > aside[aria-label="Aside"] {
+        display: none !important;
+    }
+}
+
+@media (max-width: 700px) {
+    html.l-x-theme-active .scaffold-layout {
+        padding: 8px 8px 20px !important;
+    }
+
+    html.l-x-theme-active [data-l-x-layout="canvas"] {
+        margin: 0 8px !important;
+        padding-top: 8px !important;
+    }
+
+    html.l-x-theme-active [data-l-x-layout="columns"] {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    html.l-x-theme-active [data-l-x-layout="columns"] > aside[aria-label="Sidebar"] {
+        display: none !important;
+    }
+
+    html.l-x-theme-active [data-l-x-layout="columns"] > section[aria-label="Primary content"] {
+        grid-column: 1 !important;
+    }
+
+    .l-x-start-menu {
+        width: min(410px, 100vw);
+    }
+
+    .l-x-task-button {
+        min-width: 0;
+        flex: 1 1 auto;
+        max-width: none;
+        font-size: 12px !important;
+    }
+
+    .l-x-clock {
+        min-width: 77px;
+        padding: 0 8px;
+        font-size: 11px;
+    }
+
+    .l-x-taskbar {
+        gap: 5px;
+    }
+
+    .l-x-menu-link {
+        padding: 8px;
+        gap: 8px;
+        font-size: 12px !important;
+    }
+
+    .l-x-menu-link .l-x-icon {
+        width: 29px;
+        height: 29px;
+        flex-basis: 29px;
+    }
+
+    html.l-x-theme-active .msg-overlay-container {
+        max-width: 100vw !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #l-x-shell * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
