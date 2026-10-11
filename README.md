@@ -1,3 +1,8 @@
+******************************************************************************************************
+
+This is an independent personal theme, not an official Microsoft, Yahoo, or LinkedIn product.
+
+******************************************************************************************************
 LinkedIn XP — Yahoo Messenger
 
 ━━━━━━━━━━━━━━━━━━━━
@@ -35,7 +40,7 @@ Privacy
 
 The extension may need updating if LinkedIn changes its page layout.
 
-This is an independent personal theme, not an official Microsoft, Yahoo, or LinkedIn product.
+
 
 
 ━━━━━━━━━━━━━━━━━━━━
